@@ -1,0 +1,6 @@
+{
+  "name": "Digital Marketing Campaign ML Predictor",
+  "description": "Digital Marketing Campaign Performance Prediction using Machine Learning. Train Linear Regression, Decision Tree, and Random Forest models to forecast revenue, conversions, and ROAS with interactive EDA and budget scenario analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
