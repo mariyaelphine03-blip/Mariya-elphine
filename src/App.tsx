@@ -24,6 +24,7 @@ import { ExploratoryDataAnalysis } from './components/modules/ExploratoryDataAna
 import { FeatureCorrelationAnalysis } from './components/modules/FeatureCorrelationAnalysis';
 import { ModelTrainingComparison } from './components/modules/ModelTrainingComparison';
 import { RevenueConversionPredictor } from './components/modules/RevenueConversionPredictor';
+import { WebsitePurchasePredictor } from './components/modules/WebsitePurchasePredictor';
 import { PerformanceClassification } from './components/modules/PerformanceClassification';
 import { BudgetScenarioSimulator } from './components/modules/BudgetScenarioSimulator';
 import { MarketingRecommendations } from './components/modules/MarketingRecommendations';
@@ -407,6 +408,25 @@ function AppContent() {
                   campaigns={campaigns}
                   onOpenUploadModal={() => setIsUploadModalOpen(true)}
                 />
+              )
+            )}
+
+            {currentModule === 'website-purchases' && (
+              !hasRunAnalysis ? (
+                <EmptyAnalysisState
+                  moduleTitle="Website Purchase Predictor"
+                  moduleSubtitle="Run analysis to see purchases and non-purchases by marketing source, then estimate purchase likelihood for a chosen source and number of visitors. Only Sales campaign conversions are counted as purchases."
+                  moduleIcon="predict"
+                  datasetDisplayName={datasetDisplayName}
+                  currentDatasetId={currentDatasetId}
+                  campaignCount={campaigns.length}
+                  onRunAnalysis={() => handleRunAnalysis()}
+                  isAnalyzing={isAnalyzing}
+                  onOpenUploadModal={() => setIsUploadModalOpen(true)}
+                  onSelectDatasetPreset={handleSelectDatasetPreset}
+                />
+              ) : (
+                <WebsitePurchasePredictor campaigns={campaigns} />
               )
             )}
 

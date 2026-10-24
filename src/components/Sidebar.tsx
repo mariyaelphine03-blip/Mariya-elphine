@@ -11,7 +11,8 @@ import {
   Lightbulb,
   FileCode2,
   GitCompare,
-  FileSpreadsheet
+  FileSpreadsheet,
+  ShoppingCart
 } from 'lucide-react';
 import { useAppTheme } from '../context/ThemeContext';
 
@@ -22,6 +23,7 @@ export type NavModule =
   | 'correlation'
   | 'training'
   | 'predictor'
+  | 'website-purchases'
   | 'classification'
   | 'scenario'
   | 'recommendations'
@@ -89,6 +91,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
           label: 'Revenue & Conv. Predictor',
           icon: Target,
           badge: 'Inference'
+        },
+        {
+          id: 'website-purchases' as NavModule,
+          label: 'Website Purchase Predictor',
+          icon: ShoppingCart,
+          badge: 'Buy / No Buy'
         },
         {
           id: 'classification' as NavModule,
@@ -182,7 +190,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                       <span className="truncate">{item.label}</span>
                     </div>
                     <div className="flex items-center gap-1.5">
-                      {!hasRunAnalysis && ['eda', 'correlation', 'training', 'predictor', 'classification', 'scenario', 'recommendations'].includes(item.id) ? (
+                      {!hasRunAnalysis && ['eda', 'correlation', 'training', 'predictor', 'website-purchases', 'classification', 'scenario', 'recommendations'].includes(item.id) ? (
                         <span className="text-[9px] px-1.5 py-0.5 rounded font-mono bg-amber-500/10 text-amber-500 dark:text-amber-400 border border-amber-500/30">
                           Pending
                         </span>

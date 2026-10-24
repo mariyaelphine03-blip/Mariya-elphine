@@ -12,11 +12,12 @@ A full-stack, responsive Machine Learning web application designed to forecast c
 4. **Feature & Correlation Analysis**: Pearson $r$ correlation heatmap matrix with interactive pair explanations and Random Forest Gini feature importance rankings.
 5. **Model Training & Comparison**: Train and benchmark **Multiple Linear Regression (Ridge OLS)**, **Decision Tree Regressor**, and **Random Forest Regressor** with customizable train/test split ratios and holdout test scatter/residual plots.
 6. **Revenue & Conversion Predictor**: Interactive inference engine calculating predicted revenue, conversions, ROAS, CPA, and 95% confidence intervals based on target budget, CPC, CTR, and creative quality score.
-7. **Performance Tier Classifier**: Multi-class classification (High, Medium, Low Performance) with precision, recall, and confusion matrix diagnostics.
-8. **Budget Scenario Simulator**: What-if budget allocator with non-linear diminishing returns modeling and side-by-side strategy comparisons.
-9. **Data-Driven Marketing Recommendations**: Actionable budget reallocations and creative fatigue interventions with projected revenue upside calculations.
-10. **Existing Systems vs Proposed System**: Architectural breakdown of Google Analytics 4, Google Ads, Meta Ads Manager, and Excel spreadsheets vs. the proposed ML pipeline.
-11. **Export & Python Code**: 1-click CSV/JSON export, printable executive audit report, and the complete standalone Python/Streamlit codebase (`app.py`, `requirements.txt`).
+7. **Website Purchase Predictor**: Purchase and non-purchase counts by marketing source, with purchase estimates for future visits based on historical Sales campaign conversion rates.
+8. **Performance Tier Classifier**: Multi-class classification (High, Medium, Low Performance) with precision, recall, and confusion matrix diagnostics.
+9. **Budget Scenario Simulator**: What-if budget allocator with non-linear diminishing returns modeling and side-by-side strategy comparisons.
+10. **Data-Driven Marketing Recommendations**: Actionable budget reallocations and creative fatigue interventions with projected revenue upside calculations.
+11. **Existing Systems vs Proposed System**: Architectural breakdown of Google Analytics 4, Google Ads, Meta Ads Manager, and Excel spreadsheets vs. the proposed ML pipeline.
+12. **Export & Python Code**: 1-click CSV/JSON export, printable executive audit report, and the complete standalone Python/Streamlit codebase (`app.py`, `requirements.txt`).
 
 ---
 
